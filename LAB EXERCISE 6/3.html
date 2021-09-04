@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+
+<html>
+
+<body>
+	<script type="text/javascript">
+		var marks = parseInt(prompt("Enter your marks: "));
+
+		if (marks>=0 && marks<=100){
+			if (marks>= 80 && marks<=100){
+				alert("Your Marks: " + marks + "\nDistinction");
+			}
+			else if(marks>= 60 && marks<80){
+				alert("Your Marks: " + marks + "\nFirst Division");
+			}
+			else if(marks>=50 && marks<60){
+				alert("Your Marks: " + marks + "\nSecond Division");
+			}
+			else if(marks>=40 && marks<50){
+				alert("Your Marks: " + marks + "\nThird Division");
+			}
+			else{
+				alert("Your Marks: " + marks + "\nFail");
+			}
+
+		}
+
+		else{
+			alert("Invalid Input!\nPlease Try Again");
+		}
+		
+	</script>
+</body>
+</html>

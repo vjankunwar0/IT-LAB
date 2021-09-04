@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>7</title>
+
+</head>
+
+<body>
+	<table align="center" id="myTable" width="500px" cellpadding="10px">
+		<thead style="background: cadetblue; color: #ffffff;">
+			<td align="center">S.N.</td>
+			<td align="center">Name</td>
+			<td align="center">Image</td>
+		</thead>
+		<tr>
+			<td align="center">1</td>
+			<td align="center">Name 1</td>
+			<td align="center">1.jpg</td>
+		</tr>
+		<tr>
+			<td align="center">2</td>
+			<td align="center">Name 2</td>
+			<td align="center">2.jpg</td>
+		</tr>
+		<tr>
+			<td align="center">3</td>
+			<td align="center">Name 3</td>
+			<td align="center">3.jpg</td>
+		</tr>
+		<tr>
+			<td align="center">4</td>
+			<td align="center">Name 4</td>
+			<td align="center">4.jpg</td>
+		</tr>
+	</table>
+
+	<script type="text/javascript">
+		var myTable = document.getElementById("myTable");
+		for(var i=1;i<=myTable.rows.length;i++){
+			if(i%2 != 0){
+				myTable.rows[i].style.backgroundColor = "#aaa";
+			}
+			else{
+				myTable.rows[i].style.backgroundColor = "#ddd"
+			}
+		}
+	</script>
+
+</body>
+		
